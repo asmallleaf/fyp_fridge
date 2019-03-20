@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/number"
+        android:title="number"
+        android:icon="@mipmap/icon_inf_nav"
+        app:showAsAction="always">
+    </item>
+    <item
+        android:id="@+id/tab"
+        android:title="tab"
+        android:icon="@mipmap/icon_inf_nav"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/time"
+        android:title="save time"
+        android:icon="@mipmap/icon_inf_nav"
+        app:showAsAction="never">
+    </item>
+</menu>

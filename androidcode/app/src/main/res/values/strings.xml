@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SmartFridge</string>
+    <string name="login">login and signin</string>
+    <string name="user_name">name:</string>
+    <string name="user_passwd">password:</string>
+    <string name="user_passwd2">password confirm:</string>
+    <string name="fridge_code">fridge code:</string>
+    <string name="title_activity_login">Login</string>
+</resources>

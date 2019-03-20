@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="0.11"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ToolBarTheme"
+            app:popupTheme="@style/ToolBarTheme">
+        </android.support.v7.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/portrait"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintBottom_toTopOf="@id/inf_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_weight="0.4"
+            android:foregroundGravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/inf_name"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textSize="23sp"
+            android:textColor="@color/colorPink"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/portrait"
+            app:layout_constraintBottom_toTopOf="@id/inf_listnum"
+            app:layout_constraintVertical_weight="0.1"
+            android:gravity="center"
+            android:layout_marginTop="50dp"/>
+
+        <TextView
+            android:id="@+id/inf_listnum"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/colorPink"
+            android:textSize="23sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/inf_name"
+            app:layout_constraintBottom_toTopOf="@id/inf_temp"
+            app:layout_constraintVertical_weight="0.1"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/inf_temp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/colorPink"
+            android:textSize="23sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/inf_listnum"
+            app:layout_constraintBottom_toBottomOf="@id/inf_switch"
+            app:layout_constraintVertical_weight="0.1"
+            android:layout_marginTop="25dp"
+            />
+
+        <Switch
+            android:id="@+id/inf_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inf_temp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="150dp"
+            app:layout_constraintVertical_weight="0.1"
+            android:layout_marginTop="25dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu"
+        android:theme="@style/NavTheme"
+        app:headerLayout="@layout/nav_header"
+        />
+
+</android.support.v4.widget.DrawerLayout>

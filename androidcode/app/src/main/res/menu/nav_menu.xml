@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_list"
+            android:icon="@mipmap/icon_menu_nav"
+            android:title="Item List" />
+        <item android:id="@+id/nav_inf"
+            android:icon="@mipmap/icon_inf_nav"
+            android:title="User Information"/>
+    </group>
+</menu>

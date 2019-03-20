@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0076b5</color>
+    <color name="colorPrimaryDark">#00527d</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorNavigation">#0076b5</color>
+    <color name="colorBackground">#c9f0ec</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRectoOne">#80a8bd</color>
+    <color name="colorRectTwo">#9bbd80</color>
+    <color name="colorPink">#FA8072</color>
+</resources>
