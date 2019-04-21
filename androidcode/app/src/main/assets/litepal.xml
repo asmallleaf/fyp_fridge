@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
+<!-- this is a assets xml file to map database models to real database -->
+<!--  the version should be increased whenever the structure of database is updated -->
 <litepal>
     <dbname value="db_fyg">
     </dbname>
-    <version value="3"></version>
+    <version value="4"></version>
     <list>
         <mapping class="com.test.sean.finalproject.models.Items"></mapping>
         <mapping class="com.test.sean.finalproject.models.Users"></mapping>

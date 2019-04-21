@@ -1,19 +1,22 @@
 package com.test.sean.finalproject.item;
-
 import com.test.sean.finalproject.toolbox.DbTool;
-
 import java.util.Date;
 
+// this is a class for item in recycle view
+// a item adapter has been defined in ItemAdapter class
 public class Item {
     private String item_name;
     private int item_num;
     private Double item_time;
     private String item_tab;
+    // the enum is built for switching the content shown on screen
+    // In default, it is set to show number of the item
     public enum flag{
         num,tab,time
     }
     private flag inf_flag;
 
+    // the constructor of class Item
     public Item(String item_name,int item_num,Double save_time,String item_tab)
     {
         this.item_name = item_name;
@@ -23,6 +26,7 @@ public class Item {
         this.item_time = save_time;
     }
 
+    // the following functions is getter and setter of the memebers
     public String getItem_name(){
         return this.item_name;
     }

@@ -1,8 +1,16 @@
 import getScan
 
+# this module is the launcher of the scanning function
+# it can provide a UI in terminal 
+
+# create a JsonData intent
 jsData = getScan.JsonData()
+# firstly ask the user to login their accounts
 jsData.regerister()
 jsData.getToken()
+# no matter login failed or succeeded it will
+# run into the main loop
+# the comments has been wirtten in help
 commend = input()
 while(commend!="quitAll"):
     if commend == "login":
@@ -15,6 +23,7 @@ while(commend!="quitAll"):
             jsData.read()
             if jsData.data == "exit":
                 print("out of scan mode")
+                jsData.isRead = False
                 break;
             jsData.sendPost()
     elif commend == "token":

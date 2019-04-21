@@ -2,7 +2,10 @@ package com.test.sean.finalproject.models;
 
 import org.litepal.crud.LitePalSupport;
 
+// this is a model class for Sqlite database
+// it can be used to map to Users table
 public class Users extends LitePalSupport {
+    // the columns in Users table
     private int id;
     private String name;
     private String password;
@@ -11,6 +14,7 @@ public class Users extends LitePalSupport {
     private String token;
     private Boolean is_show_inf;
 
+    // the getters and setters
     public int getId() {
         return id;
     }

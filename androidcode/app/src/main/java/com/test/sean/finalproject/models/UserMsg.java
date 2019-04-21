@@ -2,8 +2,12 @@ package com.test.sean.finalproject.models;
 
 import com.google.gson.annotations.SerializedName;
 
+// this is a model class for json decoder
+// it can be used to decode a special the json file sent by web server
 public class UserMsg {
+    // the result of this response
     private String state;
+    // the serialized name is due to different name ruls between python and java
     @SerializedName(value = "userName",alternate = {"user_name"})
     private String userName;
     @SerializedName(value = "fridgeNum",alternate = {"fridge_code","fridge_num"})
@@ -11,6 +15,7 @@ public class UserMsg {
     private String listCode;
     private String isShow;
 
+    // the getters and setters
     public String getState() {
         return state;
     }

@@ -5,5 +5,5 @@
     <string name="user_passwd">password:</string>
     <string name="user_passwd2">password confirm:</string>
     <string name="fridge_code">fridge code:</string>
-    <string name="title_activity_login">Login</string>
+    <string name="title_activity_login">SmartFridge</string>
 </resources>

@@ -1,9 +1,9 @@
 package com.test.sean.finalproject.config;
 
-import com.test.sean.finalproject.toolbox.HttpTool;
-
-import java.util.Collections;
-import java.util.Map;
+// it is a class of configuration, some basic constant value will be
+// defined in the class
+// for host uri and api, it has a getter and setter
+// the whole route can be built by combining the hostUrl and api
 
 public class Config {
     private String  hostUrl;
